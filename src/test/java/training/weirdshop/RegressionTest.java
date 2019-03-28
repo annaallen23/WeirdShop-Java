@@ -15,12 +15,12 @@ public class RegressionTest {
         };
 
         StringBuilder sb = new StringBuilder();
-        WeirdShop weirdShop = new WeirdShop(items);
+        RefactorWierdShop refactorWeirdShop = new RefactorWierdShop(items);
 
         addItems(sb, 0, items);
 
         for (int day = 1; day <= 50; day++) {
-            weirdShop.updateQuality();
+            refactorWeirdShop.updateQuality();
             addItems(sb, day, items);
         }
 
